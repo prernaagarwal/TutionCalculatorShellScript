@@ -1,0 +1,17 @@
+#!/bin/bash 
+#Instate Graduate (InGr)
+
+index=0
+credits=$1
+default=280
+if [ $credits -ge 19 ]
+then echo "$default"
+else
+	for cost in 0 414 828 1242 1656 2070 2484 2898 3312 3726 4140 4554 4968 5248 5528 5808 6088 6368 6648
+	do
+		if [ $index -eq $credits ];
+		then echo "$cost"
+		fi
+		((index++))
+	done
+fi

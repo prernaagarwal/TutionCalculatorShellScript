@@ -1,0 +1,17 @@
+#!/bin/bash 
+#Outstate Graduate (OutGr)
+
+index=0
+credits=$1
+default=601
+if [ $credits -ge 19 ]
+then echo "$default"
+else
+	for cost in 0 630 1260 1890 2520 3150 3780 4410 5040 5670 6300 6930 7560 8161 8762 9363 9964 10565 11166
+	do
+		if [ $index -eq $credits ];
+		then echo "$cost"
+		fi
+		((index++))
+	done
+fi

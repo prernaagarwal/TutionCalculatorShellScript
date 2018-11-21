@@ -1,0 +1,18 @@
+#!/bin/bash
+
+num=0
+while [ $num -le 25 ]
+do
+#rm InpInGr$num
+	while read line;
+	do	
+	
+		if [ "$line" = "UG" ]
+		then 
+			echo "GR" >> InpInGr$num
+		else
+			echo $line >> InpInGr$num
+		fi
+	done < InpInUg$num
+((num++))
+done

@@ -1,0 +1,17 @@
+#!/bin/bash 
+#TotalFee Graduate (FeeGr)
+
+index=0
+credits=$1
+default=470.0
+if [ $credits -ge 13 ]
+then echo "$default"
+else
+	for fee in 0.0 143.5 165.0 186.5 208.0 378.5 400.0 421.5 463.0 470.0 470.0 470.0 470.0
+	do
+		if [ $index -eq $credits ];
+		then echo "$fee"
+		fi
+		((index++))
+	done
+fi
