@@ -5,7 +5,11 @@ index=0
 credits=$1
 default=171
 if [ $credits -ge 19 ]
-then echo $default
+then 
+	base=3078
+	diff=$((credits-18))
+	total=$((base+diff*default))
+	echo $total
 else
 	for cost in 0 171 342 513 684 855 1026 1197 1368 1539 1710 1881 2052 2223 2394 2565 2736 2907 3078
 	do

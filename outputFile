@@ -1,0 +1,130 @@
+### This file contains the output of my mainScript ###
+
+Creating Input Files
+Done!
+ 
+Creating Result Files
+Done!
+ 
+creating GoldFiles
+Done!
+ 
+Begin Testing
+ 
+Testing for in-state UG students
+Test0 Failed
+Test1 Pass
+Test2 Pass
+Test3 Pass
+Test4 Pass
+Test5 Pass
+Test6 Pass
+Test7 Pass
+Test8 Pass
+Test9 Pass
+Test10 Pass
+Test11 Pass
+Test12 Pass
+Test13 Pass
+Test14 Pass
+Test15 Pass
+Test16 Pass
+Test17 Pass
+Test18 Pass
+Test19 Pass
+Test20 Pass
+Test21 Pass
+Test22 Pass
+Test23 Pass
+Test24 Pass
+Test25 Pass
+Done!
+ 
+Testing for in-state GR students
+Test0 Failed
+Test1 Pass
+Test2 Pass
+Test3 Pass
+Test4 Pass
+Test5 Pass
+Test6 Failed
+Test7 Failed
+Test8 Failed
+Test9 Pass
+Test10 Pass
+Test11 Pass
+Test12 Pass
+Test13 Failed
+Test14 Failed
+Test15 Failed
+Test16 Failed
+Test17 Failed
+Test18 Failed
+Test19 Failed
+Test20 Failed
+Test21 Failed
+Test22 Failed
+Test23 Failed
+Test24 Failed
+Test25 Failed
+Done!
+ 
+Testing for out-of-state UG students
+Test0 Failed
+Test1 Pass
+Test2 Pass
+Test3 Pass
+Test4 Pass
+Test5 Pass
+Test6 Pass
+Test7 Pass
+Test8 Pass
+Test9 Pass
+Test10 Pass
+Test11 Pass
+Test12 Pass
+Test13 Pass
+Test14 Pass
+Test15 Pass
+Test16 Pass
+Test17 Pass
+Test18 Pass
+Test19 Pass
+Test20 Pass
+Test21 Pass
+Test22 Pass
+Test23 Pass
+Test24 Pass
+Test25 Pass
+ 
+Done!
+Testing for out-of-state GR students
+Test0 Failed
+Test1 Pass
+Test2 Pass
+Test3 Pass
+Test4 Pass
+Test5 Pass
+Test6 Failed
+Test7 Failed
+Test8 Failed
+Test9 Pass
+Test10 Pass
+Test11 Pass
+Test12 Pass
+Test13 Failed
+Test14 Failed
+Test15 Failed
+Test16 Failed
+Test17 Failed
+Test18 Failed
+Test19 Failed
+Test20 Failed
+Test21 Failed
+Test22 Failed
+Test23 Failed
+Test24 Failed
+Test25 Failed
+Done!
+ 
+

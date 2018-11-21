@@ -3,11 +3,12 @@
 
 index=0
 credits=$1
-default=470.0
+default=470
 if [ $credits -ge 13 ] 
-then echo $default
+then 
+	echo $default
 else
-	for fee in 0.0 138.5 155.0 171.5 188.0 353.5 370.0 386.5 463.0 464.5 466.0 467.5 470.0
+	for fee in 0.0 138.5 155.0 171.5 188.0 353.5 370.0 386.5 463.0 464.5 466.0 467.5 470
 	do
 		if [ $index -eq $credits ];
 		then echo $fee

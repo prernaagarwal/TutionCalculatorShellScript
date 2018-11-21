@@ -1,21 +1,100 @@
 #!/bin/bash
 #main shell script
-
+clear
+clear
+clear
 echo "Creating Input Files"
 ./createInputFile1
 ./createInputFile2
 ./createInputFile3
-
+echo "Done!"
+echo " "
 echo "Creating Result Files"
 ./createResultFile1
 ./createResultFile2
 ./createResultFile3
 ./createResultFile4
 
+echo "Done!"
+echo " "
 echo "creating GoldFiles"
 ./createGoldFile1
 ./createGoldFile2
 ./createGoldFile3
 ./createGoldFile4
 
+echo "Done!"
+echo " "
+
+echo "Begin Testing"
+
+num=0
+echo " "
+echo "Testing for in-state UG students"
+while [ $num -le 25 ];
+do
+	cmp -s ./Testfolder/ResultInpInUg$num ./Goldfolder/GoldInpInUg$num
+	if [ $? -eq 0 ]
+	then 
+		echo "Test$num Pass"
+	else 
+		echo "Test$num Failed"
+	fi
+	((num++))
+done
+
+echo "Done!"
+
+echo " "
+num=0
+echo "Testing for in-state GR students"
+while [ $num -le 25 ];
+do
+	cmp -s ./Testfolder/ResultInpInGr$num ./Goldfolder/GoldInpInGr$num
+	if [ $? -eq 0 ]
+	then 
+		echo "Test$num Pass"
+	else 
+		echo "Test$num Failed"
+	fi
+	((num++))
+done
+
+echo "Done!"
+
+echo " "
+num=0
+echo "Testing for out-of-state UG students"
+while [ $num -le 25 ];
+do
+	cmp -s ./Testfolder/ResultInpOutUg$num ./Goldfolder/GoldInpOutUg$num
+	if [ $? -eq 0 ]
+	then 
+		echo "Test$num Pass"
+	else 
+		echo "Test$num Failed"
+	fi
+	((num++))
+done
+
+
+echo " "
+echo "Done!"
+
+num=0
+echo "Testing for out-of-state GR students"
+while [ $num -le 25 ];
+do
+	cmp -s ./Testfolder/ResultInpOutGr$num ./Goldfolder/GoldInpOutGr$num
+	if [ $? -eq 0 ]
+	then 
+		echo "Test$num Pass"
+	else 
+		echo "Test$num Failed"
+	fi
+	((num++))
+done
+
+echo "Done!"
+echo " "
 exit 0
