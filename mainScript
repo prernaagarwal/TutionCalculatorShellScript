@@ -1,0 +1,21 @@
+#!/bin/bash
+#main shell script
+
+echo "Creating Input Files"
+./createInputFile1
+./createInputFile2
+./createInputFile3
+
+echo "Creating Result Files"
+./createResultFile1
+./createResultFile2
+./createResultFile3
+./createResultFile4
+
+echo "creating GoldFiles"
+./createGoldFile1
+./createGoldFile2
+./createGoldFile3
+./createGoldFile4
+
+exit 0
