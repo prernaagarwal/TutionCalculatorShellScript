@@ -1,8 +1,0 @@
-#!/bin/bash
-num=0
-while [ $num -le 25 ] 
-do
-#	rm ResultInpInUg$num
-	~cgi_web/Tuition/cost < ./Inputfolder/InpInGr$num > ./Testfolder/ResultInpInGr$num 
-	((num++))	
-done
