@@ -1,4 +1,5 @@
 #!/bin/bash
+#createResultFile2
 num=0
 while [ $num -le 25 ] 
 do

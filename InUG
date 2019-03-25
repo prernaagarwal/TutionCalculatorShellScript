@@ -1,5 +1,5 @@
 #!/bin/bash 
-#Instate undergraduate (InUG)
+#In-state undergraduate (InUG)
 
 index=0
 credits=$1

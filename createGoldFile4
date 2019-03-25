@@ -1,5 +1,5 @@
 #!/bin/bash 
-#Create Gold Files
+#Create Gold Files4
 num=0
 while [ $num -le 25 ] 
 do

@@ -1,0 +1,98 @@
+#!/bin/bash
+echo "hello world"
+
+# for tracing, do #!/bin/bash -x
+# sysinfo_page - A script to produce an HTML file
+#To create a variable, put a line in your script that contains the name of the variable followed immediately by an equal sign ("="). No spaces are allowed. After the equal sign, assign the information you wish to store.
+
+title="My System Information"
+
+# $ sign for substitution ... command/variable
+# right_now=$(date+"%x %y %Z")
+#$right_now
+
+#constants in CAPITAL LETTERS. variables in small letters.
+
+# <<- to ignore tabs
+# cat <<- '_EOF_' #to disable interpretation within this code block
+
+# function definition should appear before function call
+# func(){
+# 	stubbing
+# 	echo "Function stub"
+# }
+#function call: $(func)
+
+# exit code 0 always = success
+# $? ... last exit code. if 0, success else fail
+
+# if root, then id -u = 0
+# test : []
+#if [ expr ];
+# space after if, then [, then space, then expr, then space, then ] then;
+# if my script successful, exit 0 else exit 1
+
+#-d file  True if file is a directory.
+#-e file  True if file exists.
+#-f file  True if file exists and is a regular file.
+#-L file  True if file is a symbolic link.
+#-r file  True if file is a file readable by you.
+#-w file  True if file is a file writable by you.
+#-x file  True if file is a file executable by you.
+#file1 -nt file2  True if file1 is newer than (according to modification time) file2
+#file1 -ot file2  True if file1 is older than file2
+#-z string  True if string is empty.
+#-n string  True if string is not empty.
+#string1 = string2  True if string1 equals string2.
+#string1 != string2 True if string1 does not equal string2.
+if [ -f .bash_profile ]
+then echo "You have a .bash_profile. Things are fine."
+else echo "Yikes! You have no .bash_profile!"
+fi
+	    
+
+cat <<- _EOF_
+	<html>
+	<head>
+	    <title>
+	    $title
+	    </title>
+	</head>
+	<body>
+		<h1>
+		$title
+		</h1>
+	</body>
+	</html>
+_EOF_
+
+
+# read text
+# read input from user and put it in text
+# read -t 3 text
+# read input within 3 seconds...timer!
+# read -s text
+# dont display text on screen...secret like password!
+# echo -n "Text on the same line. no carriage return"
+# arithmatic in double parenthesis $((expression))
+# 
+
+# refresh shell: source ~/.bashrc
+# sthg disappears/export path each time you open terminal? add path to ~/.profile
+first_num=0
+second_num=0
+
+echo -n "Enter the first number --> "
+read first_num
+echo -n "Enter the second number -> "
+read second_num
+
+echo "first number + second number = $((first_num + second_num))"
+echo "first number - second number = $((first_num - second_num))"
+echo "first number * second number = $((first_num * second_num))"
+echo "first number / second number = $((first_num / second_num))"
+echo "first number % second number = $((first_num % second_num))"
+
+
+
+

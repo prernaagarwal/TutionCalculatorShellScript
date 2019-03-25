@@ -1,0 +1,30 @@
+#!/bin/bash
+#Display all the Gold Files
+
+num=0
+while [ $num -le 25 ];
+do
+	cat ./Goldfolder/GoldInpInUg$num
+	((num++))
+done
+
+num=0
+while [ $num -le 25 ];
+do
+	cat ./Goldfolder/GoldInpInGr$num
+	((num++))
+done
+
+num=0
+while [ $num -le 25 ];
+do
+	cat ./Goldfolder/GoldInpOutUg$num
+	((num++))
+done
+
+num=0
+while [ $num -le 25 ];
+do
+	cat ./Goldfolder/GoldInpOutGr$num
+	((num++))
+done
